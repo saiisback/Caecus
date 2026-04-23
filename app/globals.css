@@ -119,6 +119,44 @@
   --text-accent-italic--font-weight: 400;
 }
 
+/* Light-mode overrides — applies when <html> has no .dark class */
+html:not(.dark) {
+  --color-background: #f7f4eb;
+  --color-on-background: #1a140a;
+  --color-surface: #ede8db;
+  --color-surface-dim: #e2ddcf;
+  --color-surface-bright: #fbf8ef;
+  --color-surface-tint: #a88a44;
+  --color-surface-variant: #d4cfc0;
+  --color-on-surface: #1a140a;
+  --color-on-surface-variant: #3a362a;
+  --color-surface-container-lowest: #f1ecde;
+  --color-surface-container-low: #e8e2d2;
+  --color-surface-container: #ddd7c5;
+  --color-surface-container-high: #d2ccbb;
+  --color-surface-container-highest: #c6c0ae;
+  --color-inverse-surface: #1a140a;
+  --color-inverse-on-surface: #e6e2df;
+  --color-inverse-primary: #c4a862;
+
+  --color-primary: #3d3725;
+  --color-primary-container: #585031;
+  --color-on-primary: #f5ebd8;
+  --color-on-primary-container: #f5ebd8;
+
+  --color-outline: #555148;
+  --color-outline-variant: #a8a397;
+
+  /* Dull gold on light surfaces — shift darker so it has contrast */
+  --color-brown: #7a6128;
+  --color-brown-light: #8a6f2e;
+  --color-brown-dim: #5a4619;
+  --color-brown-dark: #36290b;
+  --color-brown-surface: #ece4cd;
+  --color-brown-surface-high: #ddd3b6;
+  --color-on-brown: #f5ebd8;
+}
+
 html {
   background-color: var(--color-background);
 }

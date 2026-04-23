@@ -24,9 +24,13 @@ export default async function Page(props: {
         style={{ backgroundImage: "url('/whitepaper.png')" }}
       >
         <div className="absolute inset-0 bg-background/70 pointer-events-none" />
-        <div className="relative px-6 md:px-10 py-12 md:py-16">
-          <DocsTitle>{page.data.title}</DocsTitle>
-          <DocsDescription>{page.data.description}</DocsDescription>
+        <div className="relative px-6 md:px-12 py-16 md:py-24 lg:py-28">
+          <DocsTitle className="!text-5xl md:!text-6xl lg:!text-7xl font-bold tracking-tight leading-[1.05]">
+            {page.data.title}
+          </DocsTitle>
+          <DocsDescription className="!text-lg md:!text-xl mt-5 max-w-3xl">
+            {page.data.description}
+          </DocsDescription>
         </div>
       </div>
       <DocsBody>
