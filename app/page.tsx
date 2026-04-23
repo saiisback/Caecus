@@ -3,9 +3,6 @@ export default function Home() {
     <>
       {/* Top Navigation Anchor */}
       <nav className="fixed top-6 left-1/2 -translate-x-1/2 rounded-full border border-surface-variant px-6 py-2 z-50 bg-background/80 backdrop-blur-xl inner-glow shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] shadow-2xl flex items-center gap-8">
-        <div className="text-xl font-bold tracking-tighter text-primary">
-          Caecus
-        </div>
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6 text-label-caps font-label-caps text-on-surface-variant">
           <a
@@ -147,7 +144,7 @@ export default function Home() {
         </section>
 
         {/* About / Protocol Intro */}
-        <section id="protocol" className="w-full py-xl px-margin flex justify-center">
+        <section id="protocol" className="w-full min-h-screen py-xl px-margin flex items-center justify-center">
           <div
             className="w-full max-w-6xl rounded-xl border border-brown-dim/40 relative overflow-hidden bg-cover bg-center p-lg md:p-xl"
             style={{ backgroundImage: "url('/building.png')" }}
@@ -184,7 +181,7 @@ export default function Home() {
         </section>
 
         {/* Core Technology */}
-        <section id="technology" className="relative w-full py-xl px-margin bg-noise bg-surface-container-lowest">
+        <section id="technology" className="relative w-full min-h-screen py-xl px-margin bg-noise bg-surface-container-lowest flex items-center justify-center">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16 flex flex-col md:flex-row justify-between md:items-end gap-6">
               <div>
@@ -341,21 +338,19 @@ export default function Home() {
         </section>
 
         {/* Read the Whitepaper CTA */}
-        <section id="features" className="w-full py-xl px-margin">
+        <section id="features" className="w-full min-h-screen py-xl px-margin flex items-center justify-center">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-              <div>
-                <div className="text-label-caps font-label-caps text-brown-light mb-4 opacity-90">
-                  PROTOCOL SURFACE · TEN PRIMITIVES
-                </div>
-                <h2 className="text-headline-lg font-headline-lg text-primary-container max-w-3xl leading-tight">
-                  The full DeFi stack —{' '}
-                  <span className="font-accent-italic text-accent-italic text-brown-light italic">
-                    privately.
-                  </span>
-                </h2>
+            <div className="mb-12">
+              <div className="text-label-caps font-label-caps text-brown-light mb-4 opacity-90">
+                PROTOCOL SURFACE · TEN PRIMITIVES
               </div>
-              <p className="text-body-sm font-body-sm text-on-surface-variant max-w-md">
+              <h2 className="text-headline-lg font-headline-lg text-primary-container max-w-3xl leading-tight">
+                The full DeFi stack —{' '}
+                <span className="font-accent-italic text-accent-italic text-brown-light italic">
+                  privately.
+                </span>
+              </h2>
+              <p className="text-body-sm font-body-sm text-on-surface-variant w-full  mt-6">
                 Each primitive — from shielded pools up through governance and
                 compliance — has its own spec in the whitepaper.
               </p>
@@ -389,8 +384,13 @@ export default function Home() {
 
 
         {/* Why Now — Comparison */}
-        <section id="why-now" className="w-full py-xl px-margin bg-noise bg-surface-container-lowest">
-          <div className="max-w-7xl mx-auto">
+        <section
+          id="why-now"
+          className="w-full min-h-screen py-xl px-margin relative bg-cover bg-center bg-no-repeat flex items-center justify-center"
+          style={{ backgroundImage: "url('/diffimg.png')" }}
+        >
+          <div className="absolute inset-0 bg-background/80 pointer-events-none"></div>
+          <div className="relative max-w-7xl mx-auto">
             <div className="mb-16">
               <div className="text-label-caps font-label-caps text-brown-light mb-4 opacity-90">
                 WHY NOW
@@ -464,7 +464,7 @@ export default function Home() {
         </section>
 
         {/* Who It's For */}
-        <section className="w-full py-xl px-margin">
+        <section className="w-full min-h-screen py-xl px-margin flex items-center justify-center">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div>
@@ -545,7 +545,7 @@ export default function Home() {
         </section>
 
         {/* Current Status */}
-        <section id="status" className="w-full py-xl px-margin bg-noise bg-surface-container-lowest">
+        <section id="status" className="w-full min-h-screen py-xl px-margin bg-noise bg-surface-container-lowest flex items-center justify-center">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
             <div className="col-span-1 md:col-span-5">
               <div className="text-label-caps font-label-caps text-brown-light mb-4 opacity-90">
@@ -616,9 +616,13 @@ export default function Home() {
         </section>
 
         {/* Final CTA */}
-        <section className="w-full py-xl px-margin flex justify-center">
-          <div className="w-full max-w-6xl bg-surface rounded-xl p-lg md:p-xl border border-surface-variant/30 relative overflow-hidden text-center">
-            <div className="absolute inset-0 bg-noise opacity-40 pointer-events-none"></div>
+        <section className="w-full min-h-screen py-xl px-margin flex items-center justify-center">
+          <div
+            className="w-full max-w-6xl rounded-xl p-lg md:p-xl border border-brown-dim/40 relative overflow-hidden text-center bg-cover bg-center"
+            style={{ backgroundImage: "url('/cta.png')" }}
+          >
+            <div className="absolute inset-0 bg-background/70 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-noise opacity-30 pointer-events-none"></div>
             <div className="relative">
               <div className="text-label-caps font-label-caps text-brown-light mb-6 opacity-90">
                 JOIN THE WAITLIST
@@ -632,10 +636,7 @@ export default function Home() {
                 </span>{" "}
                 is not.
               </h2>
-              <p className="text-body-lg font-body-lg text-on-surface-variant max-w-xl mx-auto mb-10">
-                Early access to Caecus — the first fully private DeFi protocol,
-                built on Fhenix.
-              </p>
+             
               <div className="flex items-center justify-center gap-3 flex-wrap">
                 <button className="bg-brown text-on-brown px-8 py-4 rounded-full text-body-sm font-body-sm font-bold hover:bg-brown-dim hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(168,138,68,0.3)] hover:shadow-[0_0_40px_rgba(168,138,68,0.45)]">
                   Request Access

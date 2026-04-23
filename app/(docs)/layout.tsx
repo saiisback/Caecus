@@ -8,8 +8,8 @@ export default function Layout({ children }: { children: ReactNode }) {
     <RootProvider
       theme={{
         enabled: true,
-        forcedTheme: "dark",
         defaultTheme: "dark",
+        attribute: "class",
       }}
     >
       <DocsLayout

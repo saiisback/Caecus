@@ -167,12 +167,12 @@ body {
   font-variation-settings: "FILL" 1;
 }
 
-/* Fumadocs docs sidebar — golden arch background */
+/* Fumadocs docs sidebar — golden arch bg */
 .caecus-sidebar {
   background-color: var(--color-brown-surface) !important;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("/sidebar.jpg");
+    url("/sidebar.png");
   background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;

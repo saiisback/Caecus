@@ -19,8 +19,16 @@ export default async function Page(props: {
 
   return (
     <DocsPage toc={page.data.toc} full={page.data.full}>
-      <DocsTitle>{page.data.title}</DocsTitle>
-      <DocsDescription>{page.data.description}</DocsDescription>
+      <div
+        className="relative -mx-4 md:-mx-8 -mt-4 md:-mt-8 mb-8 rounded-xl overflow-hidden border border-brown-dim/40 bg-cover bg-center"
+        style={{ backgroundImage: "url('/whitepaper.png')" }}
+      >
+        <div className="absolute inset-0 bg-background/70 pointer-events-none" />
+        <div className="relative px-6 md:px-10 py-12 md:py-16">
+          <DocsTitle>{page.data.title}</DocsTitle>
+          <DocsDescription>{page.data.description}</DocsDescription>
+        </div>
+      </div>
       <DocsBody>
         <MDX />
       </DocsBody>
