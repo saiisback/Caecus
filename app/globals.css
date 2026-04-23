@@ -57,14 +57,14 @@
   --color-outline: #939187;
   --color-outline-variant: #48473f;
 
-  /* UK brown / saddle / cognac accent family */
-  --color-brown: #8b6f47;
-  --color-brown-light: #b8966d;
-  --color-brown-dim: #6b5437;
-  --color-brown-dark: #4a3826;
-  --color-brown-surface: #2a231b;
-  --color-brown-surface-high: #3a2f24;
-  --color-on-brown: #f5ebd8;
+  /* Dull / antique gold accent family (kept under brown-* names) */
+  --color-brown: #a88a44;
+  --color-brown-light: #c4a862;
+  --color-brown-dim: #7a6128;
+  --color-brown-dark: #473812;
+  --color-brown-surface: #1f1807;
+  --color-brown-surface-high: #2e2510;
+  --color-on-brown: #17110a;
 
   --spacing-unit: 4px;
   --spacing-xs: 0.5rem;
@@ -165,4 +165,15 @@ body {
 
 .icon-fill {
   font-variation-settings: "FILL" 1;
+}
+
+/* Fumadocs docs sidebar — golden arch background */
+.caecus-sidebar {
+  background-color: var(--color-brown-surface) !important;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("/sidebar.jpg");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
 }

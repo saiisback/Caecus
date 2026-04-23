@@ -80,7 +80,7 @@ export default function Home() {
                 but fully verifiable.
               </p>
               <div className="flex items-center gap-3 flex-wrap">
-                <button className="bg-brown text-on-brown px-6 py-3 rounded-full text-body-sm font-body-sm font-bold hover:bg-brown-dim transition-all duration-300 shadow-[0_0_30px_rgba(139,111,71,0.35)]">
+                <button className="bg-brown text-on-brown px-6 py-3 rounded-full text-body-sm font-body-sm font-bold hover:bg-brown-dim transition-all duration-300 shadow-[0_0_30px_rgba(168,138,68,0.3)]">
                   Join Waitlist
                 </button>
                 <a
@@ -97,8 +97,8 @@ export default function Home() {
           <div className="hidden md:block">
             {/* Eyebrow — top-left */}
             <div className="absolute top-16 left-16 z-20 flex items-center gap-3">
-              <span className="inline-block w-8 h-px bg-brown-light"></span>
-              <span className="text-label-caps font-label-caps text-brown-light opacity-95">
+              <span className="inline-block w-8 h-px bg-white"></span>
+              <span className="text-label-caps font-label-caps text-white opacity-95">
                 THE BLIND PROTOCOL · BUILT ON FHENIX
               </span>
             </div>
@@ -121,7 +121,7 @@ export default function Home() {
                 but fully verifiable.
               </p>
               <div className="flex items-center gap-3 flex-wrap justify-end">
-                <button className="bg-brown text-on-brown px-8 py-4 rounded-full text-body-sm font-body-sm font-bold hover:bg-brown-dim hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(139,111,71,0.35)] hover:shadow-[0_0_40px_rgba(139,111,71,0.55)]">
+                <button className="bg-brown text-on-brown px-8 py-4 rounded-full text-body-sm font-body-sm font-bold hover:bg-brown-dim hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(168,138,68,0.3)] hover:shadow-[0_0_40px_rgba(168,138,68,0.45)]">
                   Join Waitlist
                 </button>
                 <a
@@ -134,8 +134,8 @@ export default function Home() {
             </div>
 
             {/* Tagline strip — top-right, xl only so it doesn't fight the description column */}
-            <div className="absolute top-16 right-16 z-20 max-w-[18rem] text-right hidden xl:block border-r-2 border-brown pr-5">
-              <p className="text-label-caps font-label-caps text-brown-light opacity-95 leading-relaxed">
+            <div className="absolute top-16 right-16 z-20 max-w-[18rem] text-right hidden xl:block border-r-2 border-white pr-5">
+              <p className="text-label-caps font-label-caps text-white opacity-95 leading-relaxed">
                 Caecus — Latin for &ldquo;blind.&rdquo;
                 <br />
                 The chain sees everything.
@@ -637,7 +637,7 @@ export default function Home() {
                 built on Fhenix.
               </p>
               <div className="flex items-center justify-center gap-3 flex-wrap">
-                <button className="bg-brown text-on-brown px-8 py-4 rounded-full text-body-sm font-body-sm font-bold hover:bg-brown-dim hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(139,111,71,0.35)] hover:shadow-[0_0_40px_rgba(139,111,71,0.55)]">
+                <button className="bg-brown text-on-brown px-8 py-4 rounded-full text-body-sm font-body-sm font-bold hover:bg-brown-dim hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(168,138,68,0.3)] hover:shadow-[0_0_40px_rgba(168,138,68,0.45)]">
                   Request Access
                 </button>
                 <a

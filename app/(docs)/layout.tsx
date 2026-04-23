@@ -21,6 +21,9 @@ export default function Layout({ children }: { children: ReactNode }) {
             </span>
           ),
         }}
+        sidebar={{
+          className: "caecus-sidebar",
+        }}
       >
         {children}
       </DocsLayout>
