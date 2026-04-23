@@ -119,6 +119,13 @@
   --text-accent-italic--font-weight: 400;
 }
 
+/* Docs subtree — theme-aware surface */
+.docs-scope-root {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  min-height: 100vh;
+}
+
 /* Light-mode overrides — scoped to docs only, never affects the landing */
 html:not(.dark) .docs-scope-root {
   --color-background: #f7f4eb;

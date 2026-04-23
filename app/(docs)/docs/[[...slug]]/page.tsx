@@ -25,10 +25,10 @@ export default async function Page(props: {
       >
         <div className="absolute inset-0 bg-background/70 pointer-events-none" />
         <div className="relative px-6 md:px-12 py-16 md:py-24 lg:py-28">
-          <DocsTitle className="!text-5xl md:!text-6xl lg:!text-7xl font-bold tracking-tight leading-[1.05]">
+          <DocsTitle className="!text-5xl md:!text-6xl lg:!text-7xl font-bold tracking-tight leading-[1.05] !text-fd-foreground">
             {page.data.title}
           </DocsTitle>
-          <DocsDescription className="!text-lg md:!text-xl mt-5 max-w-3xl">
+          <DocsDescription className="!text-lg md:!text-xl mt-5 max-w-3xl !text-fd-muted-foreground">
             {page.data.description}
           </DocsDescription>
         </div>
