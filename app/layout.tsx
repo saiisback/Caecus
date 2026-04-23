@@ -16,9 +16,9 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Cauceus - Defined by Motion",
+  title: "Caecus — The Blind Protocol",
   description:
-    "Defining narrative through tactical motion. A sanctuary for high-value creative execution.",
+    "The first fully private DeFi protocol. Built on Fhenix. Powered by Fully Homomorphic Encryption. Every trade, position, swap, and vote — encrypted on-chain.",
 };
 
 export default function RootLayout({
