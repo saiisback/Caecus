@@ -119,8 +119,8 @@
   --text-accent-italic--font-weight: 400;
 }
 
-/* Light-mode overrides — applies when <html> has no .dark class */
-html:not(.dark) {
+/* Light-mode overrides — scoped to docs only, never affects the landing */
+html:not(.dark) .docs-scope-root {
   --color-background: #f7f4eb;
   --color-on-background: #1a140a;
   --color-surface: #ede8db;
@@ -205,13 +205,33 @@ body {
   font-variation-settings: "FILL" 1;
 }
 
-/* Fumadocs docs sidebar — golden arch bg */
+/* Fumadocs docs sidebar — golden arch bg, always dark-styled for contrast */
 .caecus-sidebar {
-  background-color: var(--color-brown-surface) !important;
+  background-color: #0a0804 !important;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/sidebar.png");
   background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
+
+  /* Force cream/gold tokens inside the sidebar so it stays legible in light mode */
+  --color-fd-foreground: #f0ece3;
+  --color-fd-muted-foreground: #c4a862;
+  --color-fd-accent: rgba(255, 255, 255, 0.08);
+  --color-fd-accent-foreground: #f5ebd8;
+  --color-fd-primary: #c4a862;
+  --color-fd-border: rgba(255, 255, 255, 0.12);
+  --color-fd-card: transparent;
+  --color-fd-secondary: rgba(255, 255, 255, 0.06);
+  --color-fd-secondary-foreground: #f0ece3;
+}
+
+/* Search dialog — smaller radius + restrained corners */
+[data-radix-popper-content-wrapper] [role="dialog"],
+dialog[data-state],
+.fd-search-dialog,
+[cmdk-root],
+[cmdk-dialog] {
+  border-radius: 0.375rem !important;
 }
