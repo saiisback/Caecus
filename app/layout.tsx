@@ -30,6 +30,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`dark ${almarai.variable} ${instrumentSerif.variable} antialiased`}
+      suppressHydrationWarning
     >
       <head>
         <link

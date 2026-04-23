@@ -1,0 +1,21 @@
+---
+title: MEV Protection Layer
+description: Infrastructure layer — MEV protection is a structural property of Caecus. Transactions are encrypted before entering the mempool.
+---
+
+**Layer:** Infrastructure · **Primitive:** Encrypted Mempool
+
+MEV protection is a **structural property** of Caecus, not a bolt-on. Because all transactions are encrypted before entering the mempool, front-running and sandwich attacks are cryptographically impossible.
+
+## What this means
+
+- Transaction data is encrypted at submission — sequencers see only ciphertexts.
+- No bot can read a pending swap, perp order, or liquidation before it settles.
+- Transaction ordering cannot be exploited because the intent is invisible.
+- Fair ordering by default — **not by policy, but by math**.
+
+## Why it matters
+
+MEV extraction costs DeFi users billions per year. Caecus eliminates the attack surface entirely — not by adding a protected relay, but by making the underlying data unreadable.
+
+Bots can't front-run what they can't see.

@@ -1,0 +1,27 @@
+---
+title: Private Perpetuals
+description: Derivatives layer — full-featured perps where position sizes, leverage, PnL, and funding rates are all encrypted on-chain.
+---
+
+**Layer:** Derivatives · **Primitive:** Encrypted Margin + Positions
+
+Full-featured perpetual futures where position sizes, leverage, PnL, and funding rates are all encrypted on-chain.
+
+## What this means
+
+- Open, manage, and close leveraged positions with no on-chain footprint visible to others.
+- Margin accounts are encrypted fhERC-20 balances — collateral is hidden.
+- Funding rate settlement happens over encrypted aggregate data — your funding exposure is private.
+- Liquidations are triggered by encrypted health factors: keepers see only **"position underwater: yes / no"** — never the size, entry price, or strategy.
+
+## What's hidden
+
+- Position direction (long / short)
+- Position size and leverage
+- Entry and liquidation price
+- Accumulated PnL
+- Margin balance
+
+## Why it matters
+
+On public perp platforms, large positions are visible. Liquidation levels are known. Whale positions get hunted. With private perps, nobody knows where your stop is — or that you're even in a trade.

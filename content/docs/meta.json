@@ -1,0 +1,17 @@
+{
+  "title": "Whitepaper",
+  "pages": [
+    "index",
+    "---The Ten Primitives---",
+    "01-shielded-pools",
+    "02-private-swaps",
+    "03-private-perpetuals",
+    "04-private-lending",
+    "05-sealed-bid-auctions",
+    "06-mev-protection",
+    "07-private-yield",
+    "08-confidential-governance",
+    "09-selective-disclosure",
+    "10-private-rwa"
+  ]
+}

@@ -1,0 +1,25 @@
+---
+title: Sealed-Bid Auctions & Dark Pools
+description: Institutional layer — a private order book and sealed-bid auction mechanism for large block trades and price discovery.
+---
+
+**Layer:** Institutional · **Primitive:** Encrypted Order Flow
+
+A private order book and sealed-bid auction mechanism that sits alongside the AMM for large block trades and price discovery.
+
+## What this means
+
+- Institutional traders post large orders as encrypted intents — size and price are hidden until settlement.
+- **Sealed-bid auctions:** all bids remain encrypted during the auction window; only the winner is revealed at close.
+- **Dark pool matching:** orders match against each other inside CoFHE without either side learning the other's parameters until execution.
+- NFT auctions, token launches, and protocol liquidations can all run through sealed bids.
+
+## What's hidden
+
+- Bid amounts and identities
+- Order book depth and composition
+- Block trade sizes pre-settlement
+
+## Why it matters
+
+Dark pools exist in TradFi precisely because large orders move markets when visible. For the first time, on-chain dark pool mechanics are possible — giving institutional participants a venue that doesn't telegraph their strategy.

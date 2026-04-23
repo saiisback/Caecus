@@ -1,0 +1,27 @@
+---
+title: Private Lending Market
+description: Credit layer — every collateral position, borrow amount, interest rate, and health factor is encrypted. Liquidations trigger via CoFHE booleans.
+---
+
+**Layer:** Credit · **Primitive:** Encrypted Borrow / Lend
+
+A full lending protocol — think Aave — where every collateral position, borrow amount, interest rate, and health factor is encrypted.
+
+## What this means
+
+- Deposit collateral as encrypted fhERC-20 — nobody knows what you've posted or how much.
+- Borrow against it without revealing your loan-to-value ratio.
+- Interest accrues silently in encrypted state.
+- Liquidation bots check health factors via CoFHE: they receive a boolean (**"liquidate: yes / no"**) — the position details stay sealed, even from the keeper.
+- Institutions can borrow at scale without revealing strategy or counterparty exposure.
+
+## What's hidden
+
+- Collateral type and amount
+- Borrow size and asset
+- Health factor and liquidation threshold
+- Interest owed
+
+## Why it matters
+
+Transparent lending protocols expose every institution's risk profile. Competitors can see if a whale is over-leveraged. Protocol-level front-running of liquidations is rampant. Private lending makes all of this impossible.

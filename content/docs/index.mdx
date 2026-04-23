@@ -1,0 +1,45 @@
+---
+title: Caecus Whitepaper
+description: The Blind Protocol — a complete DeFi suite built on Fhenix where every trade, position, swap, and vote is encrypted on-chain.
+---
+
+## What we're building
+
+Caecus is a complete DeFi suite — pools, swaps, lending, perpetuals, governance — where **nothing is visible on-chain**. Not your balance. Not your position size. Not your strategy. Not your trades.
+
+Every primitive you expect from DeFi, now with institutional-grade confidentiality baked in at the protocol level.
+
+Caecus is not wrapping privacy on top of existing protocols. We are building privacy-first from the ground up on **Fhenix**, using **Fully Homomorphic Encryption (FHE)** — the only cryptographic approach that lets you compute directly on encrypted data without ever decrypting it.
+
+## The core technology
+
+**Fhenix CoFHE** (FHE Coprocessor) offloads the heavy cryptographic work off-chain while keeping verifiability on-chain. The result: **20,000× higher throughput** and **37× lower latency** compared to earlier FHE systems. Private DeFi at production speed.
+
+- Data stays **encrypted during computation** — not just at rest or in transit.
+- The chain sees only ciphertexts — **raw values are never exposed on-chain**.
+- Smart contracts run math on encrypted numbers and return encrypted results.
+- No new VM, no new language — **pure Solidity**, familiar tooling.
+
+## The Ten Primitives
+
+The protocol surface covers the full DeFi stack. Pick a primitive to read the spec:
+
+1. [Shielded Liquidity Pools](/docs/01-shielded-pools) — the fhERC-20 standard
+2. [Private Swaps](/docs/02-private-swaps) — Uniswap v4 hooks + FHE
+3. [Private Perpetuals](/docs/03-private-perpetuals) — encrypted margin & positions
+4. [Private Lending Market](/docs/04-private-lending) — encrypted borrow / lend
+5. [Sealed-Bid Auctions & Dark Pools](/docs/05-sealed-bid-auctions) — encrypted order flow
+6. [MEV Protection Layer](/docs/06-mev-protection) — encrypted mempool
+7. [Private Yield & LP Positions](/docs/07-private-yield) — hidden fee accrual
+8. [Confidential Governance](/docs/08-confidential-governance) — encrypted voting
+9. [Selective Disclosure & Audit Keys](/docs/09-selective-disclosure) — compliance controls
+10. [Private RWA Tokenization](/docs/10-private-rwa) — confidential real-world assets
+
+## Current status
+
+- **Technology** — Built on Fhenix CoFHE. Live on Arbitrum Sepolia testnet.
+- **Stack** — Solidity + fhERC-20 + Uniswap v4 hooks + CoFHE SDK.
+- **Stage** — Protocol design & testnet development.
+- **Next** — Private beta → Waitlist → Mainnet.
+
+> *Caecus — Latin for "blind." The chain sees everything. It understands nothing.*

@@ -1,0 +1,26 @@
+---
+title: Private Swaps
+description: AMM layer — private swaps plug into Uniswap v4 via FHE hooks. Inputs, outputs, and token pairs are encrypted before hitting the mempool.
+---
+
+**Layer:** AMM · **Built on:** Uniswap v4 Hooks + FHE
+
+Private swaps plug into Uniswap v4's existing liquidity via FHE hooks. You don't give up deep liquidity for privacy — you get both.
+
+## What this means
+
+- Swap inputs, outputs, and token pairs are encrypted before hitting the mempool.
+- The AMM curve runs on encrypted reserves — trade execution is verified without exposing trade size.
+- Slippage parameters, paths, and token identities can all be hidden.
+- LP fees accrue to encrypted LP receipt tokens — your earnings are private.
+
+## What's hidden
+
+- Who is swapping
+- What they're swapping
+- How much they're swapping
+- At what price
+
+## Why it matters
+
+Every swap on a transparent AMM is a signal. MEV bots read your intent and extract value before your trade even settles. Private swaps make sandwich attacks cryptographically impossible — bots can't front-run what they can't see.
