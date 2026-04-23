@@ -1,45 +1,9 @@
+import { TopNav } from "./_components/top-nav";
+
 export default function Home() {
   return (
     <>
-      {/* Top Navigation Anchor */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 rounded-full border border-surface-variant px-6 py-2 z-50 bg-background/80 backdrop-blur-xl inner-glow shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] shadow-2xl flex items-center gap-8">
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-6 text-label-caps font-label-caps text-on-surface-variant">
-          <a
-            className="hover:text-primary transition-colors duration-300"
-            href="#protocol"
-          >
-            Protocol
-          </a>
-          <a
-            className="hover:text-primary transition-colors duration-300"
-            href="#features"
-          >
-            Features
-          </a>
-          <a
-            className="hover:text-primary transition-colors duration-300"
-            href="#technology"
-          >
-            Technology
-          </a>
-          <a
-            className="text-primary font-bold border-b border-primary pb-0.5"
-            href="#why-now"
-          >
-            Why Now
-          </a>
-          <a
-            className="hover:text-primary transition-colors duration-300"
-            href="#status"
-          >
-            Status
-          </a>
-        </div>
-        <button className="bg-brown text-on-brown px-4 py-2 rounded-full text-label-caps font-label-caps font-bold hover:bg-brown-dim hover:scale-95 active:scale-90 transition-all hidden md:block">
-          Join Waitlist
-        </button>
-      </nav>
+      <TopNav />
       {/* Main Content Canvas */}
       <main className="w-full">
         {/* Hero Section */}
@@ -56,8 +20,8 @@ export default function Home() {
             <div className="noise-overlay"></div>
           </div>
 
-          {/* Mobile layout — vertical stack, left-aligned */}
-          <div className="md:hidden absolute inset-x-6 bottom-10 top-10 z-20 flex flex-col justify-between">
+          {/* Mobile / tablet layout — vertical stack, left-aligned */}
+          <div className="lg:hidden absolute inset-x-6 bottom-10 top-10 z-20 flex flex-col justify-between">
             <div className="flex items-center gap-3">
               <span className="inline-block w-8 h-px bg-brown-light"></span>
               <span className="text-label-caps font-label-caps text-white opacity-95">
@@ -91,7 +55,7 @@ export default function Home() {
           </div>
 
           {/* Desktop layout — corner anchored */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             {/* Eyebrow — top-left */}
             <div className="absolute top-16 left-16 z-20 flex items-center gap-3">
               <span className="inline-block w-8 h-px bg-white"></span>
