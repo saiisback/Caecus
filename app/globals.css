@@ -54,6 +54,15 @@
   --color-outline: #939187;
   --color-outline-variant: #48473f;
 
+  /* UK brown / saddle / cognac accent family */
+  --color-brown: #8b6f47;
+  --color-brown-light: #b8966d;
+  --color-brown-dim: #6b5437;
+  --color-brown-dark: #4a3826;
+  --color-brown-surface: #2a231b;
+  --color-brown-surface-high: #3a2f24;
+  --color-on-brown: #f5ebd8;
+
   --spacing-unit: 4px;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
